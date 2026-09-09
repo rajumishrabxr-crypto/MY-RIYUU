@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Our Memories ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="memories-page">
+
+    <!-- Background Music -->
+    <audio id="bgMusic" autoplay loop>
+        <source src="audio/Until_I_Found_You.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- LEFT DECORATION -->
+    <div class="side-decoration left">
+        <span>🌸</span>
+        <span>🌷</span>
+        <span>✨</span>
+        <span>🦋</span>
+        <span>🌹</span>
+        <span>💗</span>
+    </div>
+
+    <!-- RIGHT DECORATION -->
+    <div class="side-decoration right">
+        <span>🌹</span>
+        <span>🦋</span>
+        <span>✨</span>
+        <span>🌷</span>
+        <span>🌸</span>
+        <span>💖</span>
+    </div>
+
+    <!-- PAGE CONTENT -->
+    <div class="page-container">
+
+        <div class="section-heading">
+            <span>THE MOMENTS</span>
+
+            <h1>Our Memories ❤️</h1>
+
+            <p>
+                Some moments become memories.
+                Some memories become a part of you.
+            </p>
+        </div>
+
+        <div class="gallery">
+
+            <div class="photo-card">
+                <img src="images/pic1.jpeg" alt="Our memory 1">
+                <div class="photo-number">01</div>
+            </div>
+
+            <div class="photo-card">
+                <img src="images/pic2.jpeg" alt="Our memory 2">
+                <div class="photo-number">02</div>
+            </div>
+
+            <div class="photo-card">
+                <img src="images/pic3.jpeg" alt="Our memory 3">
+                <div class="photo-number">03</div>
+            </div>
+
+            <div class="photo-card">
+                <img src="images/pic4.jpeg" alt="Our memory 4">
+                <div class="photo-number">04</div>
+            </div>
+
+            <div class="photo-card">
+                <img src="images/pic5.jpeg" alt="Our memory 5">
+                <div class="photo-number">05</div>
+            </div>
+
+            <div class="photo-card">
+                <img src="images/pic6.jpeg" alt="Our memory 6">
+                <div class="photo-number">06</div>
+            </div>
+
+            <div class="photo-card">
+                <img src="images/pic7.jpeg" alt="Our memory 7">
+                <div class="photo-number">07</div>
+            </div>
+
+            <div class="photo-card">
+                <img src="images/pic8.jpeg" alt="Our memory 8">
+                <div class="photo-number">08</div>
+            </div>
+
+            <div class="photo-card">
+                <img src="images/pic9.jpeg" alt="Our memory 9">
+                <div class="photo-number">09</div>
+            </div>
+
+            <div class="photo-card">
+                <img src="images/pic10.jpeg" alt="Our memory 10">
+                <div class="photo-number">10</div>
+            </div>
+
+            <div class="photo-card">
+                <img src="images/pic11.jpeg" alt="Our memory 11">
+                <div class="photo-number">11</div>
+            </div>
+
+            <div class="photo-card">
+                <img src="images/pic12.jpeg" alt="Our memory 12">
+                <div class="photo-number">12</div>
+            </div>
+
+        </div>
+
+        <div class="navigation">
+
+            <a href="love.html">
+                ← Love Letter
+            </a>
+
+            <a href="forever.html">
+                One More Thing →
+            </a>
+
+        </div>
+
+    </div>
+
+    <script>
+        const music = document.getElementById("bgMusic");
+
+        // Try to play immediately when the page loads
+        window.addEventListener("load", function () {
+            music.play().catch(function (error) {
+                console.log("Autoplay was blocked:", error);
+            });
+        });
+
+        // Fallback: play on the first interaction
+        document.addEventListener("click", function () {
+            music.play().catch(function (error) {
+                console.log("Music could not start:", error);
+            });
+        }, { once: true });
+    </script>
+
+</body>
+</html>
